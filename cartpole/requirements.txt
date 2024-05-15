@@ -1,0 +1,9 @@
+gym==0.21.0
+matplotlib
+optuna
+pygame
+pyglet
+scikit-image
+scikit-video
+seaborn
+termcolor
