@@ -23,12 +23,12 @@ do
                     --agent myopic --grid wide --no-validation \
                     --rand-conv --kernel-size 3 --projection \
                     --lr 0.0046 --alpha 5.0 --temperature 1.0 \
-                    --gamma 0. --soft-coupling-temperature 0.01
+                    --gamma 0. --soft-coupling-temperature 0.01 --max-grad-norm 5.0
 
     # RandConv + Myopic PSEs (multiple)
     python -m train --device 0 --seed $i --work-dir train_output/wide/multi-myopic \
                     --agent myopic --grid wide --no-validation \
                     --rand-conv --kernel-size 3 --projection --multi-positive \
                     --lr 0.0012 --alpha 5.0 --temperature 1.0 \
-                    --gamma 0. --soft-coupling-temperature 0.01
+                    --gamma 0. --soft-coupling-temperature 0.01 --max-grad-norm 5.0
 done
