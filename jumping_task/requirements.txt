@@ -1,0 +1,12 @@
+einops
+gym==0.21.0
+imageio
+imageio[ffmpeg]
+matplotlib
+numpy
+opencv-python==4.8.0.74
+optuna
+pygame
+seaborn
+termcolor
+umap-learn
