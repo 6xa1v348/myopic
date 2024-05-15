@@ -3,7 +3,7 @@
 mkdir -p train_output/wide
 
 
-for i in 1
+for i in {1..20}
 do
     # RandConv
     python -m train --device 0 --seed $i --work-dir train_output/wide/baseline \
